@@ -1,0 +1,20 @@
+.container {
+	@apply flex relative hover:outline outline-2;
+
+	&:hover .toolTip {
+		@apply flex;
+	}
+
+	.toolTip {
+		@apply z-10 hidden absolute left-1/2 bg-gray-900 text-white w-40 rounded-md p-1 flex-col items-center justify-center;
+
+		transform: translate(-50%, -120%);
+
+		&::after {
+			content: '';
+			@apply bg-inherit w-5 h-5 absolute -z-10 -bottom-2;
+
+			clip-path: polygon(0 0, 50% 100%, 100% 0);
+		}
+	}
+}

@@ -1,0 +1,7 @@
+.container {
+	@apply flex flex-col gap-2 items-center justify-center m-5;
+
+	.title {
+		@apply text-3xl;
+	}
+}

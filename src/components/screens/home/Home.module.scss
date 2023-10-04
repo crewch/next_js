@@ -1,0 +1,15 @@
+.container {
+	@apply flex flex-col justify-center items-center h-full;
+
+	.btn {
+		@apply bg-pink-500 text-white;
+	}
+
+	.changeContainer {
+		@apply flex gap-3 items-center;
+	}
+
+	.asyncIncrement {
+		@apply mt-2 flex gap-2;
+	}
+}

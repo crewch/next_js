@@ -1,0 +1,11 @@
+.nav {
+	@apply flex items-center justify-center h-full px-8 gap-5;
+
+	.link {
+		@apply text-slate-200 hover:underline hover:decoration-yellow-100;
+	}
+
+	.linkActive {
+		@apply text-yellow-100;
+	}
+}
